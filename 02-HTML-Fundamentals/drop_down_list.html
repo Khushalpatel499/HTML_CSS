@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Down List</title>
+  </head>
+  <body>
+    <!-- to add dropdown list use select tag and for each use option
+        for general we can select one option but for multiple option we used
+        multiple attribute
+    -->
+    <form>
+      <p>Months</p>
+      <select name="month_selected" multiple>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option selected>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+      </select>
+
+      <!-- now we want to input text then we have input type text but it is single line-
+        for multiple line use <textarea> </textarea>
+      -->
+      <p>Share your experience</p>
+      <textarea name="experience" rows="10" cols="20"></textarea>
+
+      <!--other buttons-->
+      <input type="button" value="button1" />
+
+      <!--button tag it take three values submit(defualt),button,reset(reset all values)-->
+      <button type="button"></button>
+      <!--the difference in input button vs button tag is that in button tag we can add imag-->
+      <button type="button">
+        <img src="image/coding_ninjas.png" width="50%" />
+      </button>
+    </form>
+
+    <!--The <optgroup> tag is used to group several options together intoonegroup.-->
+    <select>
+      <optgroup label="Books">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </optgroup>
+      <optgroup label="Snippets">
+        <option value="git">Git</option>
+        <option value="java">Java</option>
+      </optgroup>
+    </select>
+  </body>
+</html>
+
+<!--The autofocus attribute is a boolean attribute. When applied tothebuttonspecifies that the button automatically gets focus when the pageloads.-->

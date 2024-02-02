@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add table</title>
+  </head>
+  <body>
+    <!-- to add table we need <table></table> and for each row we need <tr> </tr> to add data to very row we need <td> </td>
+     for table header used th instead of td
+     add border by attribute  boader ="2" ,here 2 is thickness of borader
+     to add title of table we add caption element which is next to table element
+     if we want to span one entry over two column use colspan ="2"
+     similar for rowspan ="2"
+    -->
+    <table border="2">
+      <caption>
+        Demo table
+      </caption>
+      <tr>
+        <th></th>
+        <th colspan="2">Column1</th>
+        <th>Column2</th>
+        <th>Column3</th>
+      </tr>
+      <tr>
+        <th rowspan="2">Row 1</th>
+        <td>Cell1,1</td>
+        <td>Cell1,2</td>
+        <td>Cell1,3</td>
+      </tr>
+      <tr>
+        <th>Row 2</th>
+        <td>Cell2,1</td>
+        <td>Cell2,2</td>
+        <td>Cell2,3</td>
+      </tr>
+      <tr>
+        <th>Row 3</th>
+        <td>Cell3,1</td>
+        <td>Cell3,2</td>
+        <td>Cell2,3</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- The <thead> tag is used to group header content in an HTML table. 
+The <tbody> tag is used to group the body content in an HTML table. 
+The <tfoot> tag is used to group footer content in an HTML table. -->

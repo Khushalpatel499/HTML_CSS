@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--meta data is infromation about html page
+     meta data is important in persepection of seo (search engine optimization) 
+     improve the rank of your page when any one search
+    -->
+    <!--meta descriptiont tag- and next is content(veryshort description) where we have to brief what this is website about-->
+    <meta name="description" content="" />
+    <!--meta keyword imp keyword-->
+    <meta name="keywords" content="coding,html,css" />
+
+    <!--author tag-->
+    <meta name="--author" content="Khushal Patel" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--to add fevicon to title-->
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico" />
+    <title>Media tag</title>
+  </head>
+  <body>
+    <!--audio tag use controls to see in browser
+     we can specified source if browser not able to read current source than use another source
+    -->
+    <audio src="" controls></audio>
+
+    <audio controls>
+      <source src="audio.mp3" type="audio/mp3" />
+      <source src="audio.ogg" type="audio/ogg" />
+    </audio>
+
+    <!--we can also specify text that if browser is not able to play video then show that text-->
+
+    <video src="" controls></video>
+
+    <video height="200" width="300" controls>
+      <source src="video.mp4" type="video/mp4" />
+      browser doen't support video format.
+    </video>
+
+    <!-- figure tag to add different figures-->
+    <figure>
+      <img src="image/coding_ninjas.png" alt="" />
+      <figcaption>Logo Image</figcaption>
+    </figure>
+  </body>
+</html>
+
+<!--The rel defines the relationship with the favicon. The href defines the location of the favicon.
+The type defines the media type of the favicon-->
+
+<!-- There are 4 attributes that are used in meta tag:
+● name
+● content
+● charset
+● http-equiv -->
+
+<!--in audio,video the autoplay attribute set or return wheater it should start playing as soon as it is loaded-->

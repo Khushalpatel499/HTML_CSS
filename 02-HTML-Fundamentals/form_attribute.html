@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form attribute</title>
+  </head>
+  <body>
+    <!--
+        where should form send data by action attrbute to provide url 
+        we can specify http method  that we want to use in method attribute
+        ex: let client collect the form data and send data to server page by http(hypertext transfer protocol) request
+        so there are two important http request get and post, and after that server come with a response
+        so which type of request it is that we specified in method attribute
+        get rquest is made when we want or reterive some information back form server.(we dont want to server to change in data base but we want server to give some information)
+        post request  is made when we send some data to server and create it or update data in database
+    -->
+    <!-- so here what data we submit is part of url- ,so the problem is that it is not secure
+         so in case of secure think like password we use post to send
+    -->
+    <form action="" method="get">
+      <textarea name="experience" id="" cols="30" rows="10"> </textarea>
+      <br />
+      <input type="submit" name="" id="" />
+    </form>
+    <form action="" method="post">
+      <textarea name="experience" id="" cols="30" rows="10"> </textarea>
+      <br />
+      <input type="submit" name="" id="" />
+    </form>
+  </body>
+</html>

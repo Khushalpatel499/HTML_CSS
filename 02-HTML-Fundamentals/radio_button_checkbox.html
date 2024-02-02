@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio button and checkbox</title>
+  </head>
+  <body>
+    <!--radio button-->
+    <form>
+      <!-- to check one at a time we provide same name to all radio input
+     for selecting the radio button and specified name not pass data we have to speicfied value
+     for by default checked the radio button we specified checked.
+    -->
+      <p>Gender</p>
+      <input type="radio" name="gender" value="Female" checked /> Female<br />
+      <input type="radio" name="gender" value="Male" />Male <br />
+      <input type="radio" name="gender" value="other" />other <br />
+      <input type="submit" />
+
+      <!--checkboxes to select more than one option-->
+      <!--here same name not specified one at a time-->
+      <p>Course Done</p>
+      <input type="checkbox" name="course" value="C++" checked /> C++<br />
+      <input type="checkbox" name="course" value="Java" /> Java<br />
+      <input type="checkbox" name="course" value="Python" /> Python<br />
+      <input type="checkbox" name="course" value="Web developement" /> web
+      developement
+    </form>
+  </body>
+</html>
+
+<!-- For "button", "reset", and "submit" - it defines the text onthebutton
+● For "text", "password", and "hidden" - it defines the initial (default)value of the input field
+● For "checkbox", "radio", "image" - it defines the value associatedwith the input (this is also the value that is sent on submit) -->
+
+<!-- Radio button is just like a checkbox, but the difference is that the values of nameattribute are all the same. To define a radio button the value of type attributeis"radio". -->

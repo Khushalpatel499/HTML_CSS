@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <!-- to create form we need <form> </form> tag and for input we 
+      need input <input type "" name =""> we can specify type like text, for submit input type is submit,for passoword type is password
+     input tag is inline tag
+     we also have to specify label 
+     <label for=""> </label> in for we have to tell that for which tag this label for
+     so  we have id (it identify an element uniquely) for input 
+     label and input are inline
+     to mark an field compulsory we add required  attribute ,it is boolean attribute
+    -->
+    <form>
+      <div>
+        <label for="username">UserName</label> <br />
+        <input type="text" name="username" id="username" required />
+      </div>
+
+      <div>
+        <label for="password">Password</label> <br />
+        <input type="password" name="password" id="password" required />
+      </div>
+
+      <div>
+        <input type="submit" />
+      </div>
+
+      <div>
+        <input type="range" name="" id="" min="10" max="50" step="10" />
+        <!-- place holder use as an example for input-->
+        <input
+          type="email"
+          name="email"
+          value="Khushal@ex.in"
+          placeholder="abc@example.com"
+          disabled
+        />
+      </div>
+    </form>
+  </body>
+</html>
+
+<!--different inputs types are text ,password ,submit,number,time,email,url,range-->
+<!-- form pass data in the form of name,value(data) so every field have namev, for defalut value we can filled value
+ in some field we dont want to change the field by disabled.
+-->
