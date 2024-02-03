@@ -1,0 +1,185 @@
+/*combining selectors here these selector are list selector*/
+h1,
+h2,
+h3,
+p {
+  font-family: sans-serif; /*serif is default*/
+}
+
+h1 {
+  /* each property can take different type  of values such 
+  as length or keyword here red is keyword for font size we need length*/
+  color: red;
+  font-size: 26px;
+  /* font-family: sans-serif;*/
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  color: #512a2a;
+  /* font-family: sans-serif;*/
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h3 {
+  font-size: 30px;
+  /* font-family: sans-serif;*/
+  text-align: center;
+  color: rgb(126, 132, 122);
+}
+
+p {
+  font-size: 22px;
+  /* font-family: sans-serif;*/
+  line-height: 1.5; /* 1.5 times of fontsize , default is 1*/
+  color: rgba(122, 153, 132, 0.578);
+}
+
+li {
+  font-size: 20px;
+  /* font-family: sans-serif;*/
+  /*by default fontsize is 16px*/
+}
+
+/*decendent selector*/
+/*select all the p element inside the footer element*/
+footer p {
+  font-size: 16px;
+}
+/*we can also nested decendent selector*/
+
+article header p {
+  font-style: italic;
+}
+
+/* due to large decendent selector we use id or class*/
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* the difference between id and class is that we cant use same id name ,so if we need to reuse a name multiple time than we used classes */
+/* in css if we have id or class name with multiple words than seperate by - ex: related-author */
+/* for id we use # while for class we use . */
+
+.related-author {
+  font-size: 15px;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+}
+
+.related {
+  list-style: none;
+}
+
+/*in real world we always used class for ready to change of code*/
+
+/*color */
+
+/* the RGB Model  */
+/* combination of red,green,blue with base can taken a value between 0 to 255
+  in white all value are 255,255,255
+
+  1. defining colors in css
+  a. RGB/RGBA notation
+    regular rgb : rgb(0,255,255)
+    rgb with transparency ('alpha'): rgba(0,255,255,0.3)
+
+  2. Hexadecimal notation
+  a.instead of 0 to 255 we go for 0 to ff (255 in hexadecimal)
+     ex: #00ffff
+    b. shorthand , when all colors are identical pairs
+    ex: #0ff
+    c. in prartice, we mostly use hexadecimal colors and rgba when we need tranparency
+ 
+ 3. shades of gray.
+
+   a when colors in all 3 channels are the same we get a grey color,there are 256 pure gray to choose
+   ex: rgb(0,0,0)/ #000000 / #000
+       rgb(69,69,69)/#444444//#444
+       rgb(183,183,183)/#b7b7b7
+       rgb(255,255,255)/#ffffff /#fff
+
+*/
+header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* border: 5px solid #1098ad; width style and color */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  border-left: 5px solid #1098ad;
+  border-right: 5px solid #1098ad;
+}
+
+body {
+  background-color: red;
+}
+
+/*pseudo class*/
+
+.first-li {
+  font-weight: bold;
+}
+/* here first child pseudo class do ,it will select the first li element or all li element that are first child of its parent element  */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(2) {
+  color: red;
+}
+li:nth-child(odd) {
+  color: red;
+}
+
+/* let we have an article and in the article we have first child header and in header we have and para so if we use sudoclass
+as article p:first-child but it does not work because a para inside article and which is first child but first child of article is header */
+/*isconception this wont work*/
+article p:first-child {
+  color: red;
+}
+
+/* stying link  
+ simply styling  link is not good pratice we have  style pseudo class of anchor which allow style differnet states*/
+a:link {
+  color: #000;
+  /* remove the underline  */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #777;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline dotted orange; /*   we can deffine text decoration line,style,color */
+}
+
+a:active {
+  /*when we click the link the active class added to link*/
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */

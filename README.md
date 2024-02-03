@@ -17,3 +17,16 @@
 12. so the procees is that client provide url then it goes to isp(internet service provider) with the domain name then isp search the given dns then provide desired ip address and then contact to server and establish a connection between client and server.
 13. html tag have two fixed children called head and body(whatever part visible on page come under body section).
 14. head part is about metadata which is generally some information about the page 15.<!DOCTYPE html> this indicate browser to that we are using html 5
+
+#CSS
+1.cascading style sheets
+2.it describe the visual style and presentation of the content written in html
+3.CSS consist of countless properties that developers use to format the content: properties about font,text,spacing,layout etc.
+ex: h1{
+color:blue;
+}
+4.in above code h1 is selector and color is property and blue is value and property with value together is declaration/style ,all this declartion or style make together a declaration block which put in{}. all together are called css rule
+
+5.there are three places where we can write css is inline,internal and external css
+6.inline css write inside the html element
+7.in internal css we declare a style element in head.
