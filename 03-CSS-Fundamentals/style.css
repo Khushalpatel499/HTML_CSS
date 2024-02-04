@@ -1,4 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*combining selectors here these selector are list selector*/
+
 h1,
 h2,
 h3,
@@ -45,6 +51,10 @@ li {
   font-size: 20px;
   /* font-family: sans-serif;*/
   /*by default fontsize is 16px*/
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0; /*dont specified unit for 0*/
 }
 
 /*decendent selector*/
@@ -130,6 +140,7 @@ aside {
 
 body {
   background-color: red;
+  position: relative;
 }
 
 /*pseudo class*/
@@ -183,3 +194,182 @@ a:active {
 }
 
 /* LVHA */
+/*we can add multiple class*/
+/*confilct betwwen selector*/
+
+/*if there are multiple selector and they conflict then the priority is as follow highest to lowest;
+     declarations marked !important
+     inline style
+      id selector ------> multiple (last selector in code applies)
+      class or pseudo class----> multiple (last selector in code applies)
+      element selector(p,div,li etc.)---->multiple (last selector in code applies)
+      universeral selector(*)--->multiple (last selector in code applies)
+
+      */
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important; /*important keyword*/
+}
+
+/* Inheritance and the univeral selector */
+
+/* getting some property or value from parent element to child element in inheritence 
+ inheritated value easily over written by value if child have same property
+*/
+
+/*universal selector select all elements  but doesn't inherited*/
+
+* {
+  border-top: 10px solid #512a2a;
+}
+
+.add-cart {
+  background-color: #000;
+  border: none;
+  color: #f7f7f7;
+  cursor: pointer;
+}
+.add-cart:hover {
+  color: #000;
+  background-color: #f7f7f7;
+}
+
+/* the css box model  */
+/* a box model tell how element are display on webpage and how they are sized 
+  box model contain:
+  1.content:text,images,etc.
+  2.Boarder: a line around the elment,still inside of the element
+  3.padding(between content and boarder): invisible space around the content ,inside of the element.
+  4. margin(between boarder and outside): Space outside of the elemment between elements
+  
+  a.content,boarder,padding are visible part of the the page.
+
+  5. fill area(apply include content,padding and boarder) :area that gets filled with background color or background image
+
+  imp:
+   a.final element width =left boarder + left padding + width + right padding + right boarder
+
+   b.final element height =top border + top padding + height +bottom padding + bottom border
+
+   imp: margin is not property related to text so it not totaly inhertated from body.
+   if we want to apply margin to each elemment then we use universal selector
+
+   collapsing margin : if we have two margin on a page then only one margin visible on the page which is larger one.
+*/
+
+.main-header {
+  padding: 20px; /*top  right bottom left*/
+  padding-left: 40px;
+}
+
+/* adding dimensions */
+aside {
+  width: 500px;
+  height: 80px;
+}
+
+.post-img {
+  width: 100%; /*% is the width of parent container*/
+  height: auto; /*automatially adapt fix ratio with width*/
+}
+
+/* centering our page  */
+
+.container {
+  width: 800px; /* now all the child element can be maximum of 700px*/
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+/*the boxes that needed exactly the space that required are called inline box model
+other boxes are called box level boxes. and they create line break after them.
+example of block level are or default elements: body,main,header,footer,section,nav,aside,div,h1-h6,p,ul,ol,li etc.
+note: for inline box model height and width do not apply , padding and marginsn are applied only horizontally(left and right)
+ex: default elements: a,img,strong,em,button,etc.
+
+inline-block boxes: looks like inline from the outside, behaves like block level on the inside.
+ex: img is inlineblock
+*/
+
+nav a:link {
+  background-color: red;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+/* Normal flow vs absolute positioning
+
+normal flow: default positioning
+            element is in flow
+
+absolute positioning: element is removed from the normal flow: out of flow
+                      no impact on surrounding elements,might overlap them
+                      we use top,bottom ,left or right to offset the element from its relatively positioned container
+                      it is relative to view port
+
+*/
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  /*now it is relative to viewport for other we have to set body postion to relative to make it relative to body beacuse we can make relative to its parent contaier only*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* pseudo elements are not exist in html but still we can style them in css*/
+
+h1::first-letter {
+  font-size: normal;
+  margin-right: 5px;
+}
+
+p::first-line {
+  color: red;
+}
+
+/* adjacent slibling is the element which come just after that element  */
+
+h3 + p::first-line {
+  color: blue;
+}
+
+/* after and before pseudo elements
+ after pseudo element create pseudo element that will be  last child of selected element
+ while before is the first child of the class element
+ */
+
+h2 {
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+
+  right: -25px; /*move opposite side*/
+}
