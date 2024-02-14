@@ -1,0 +1,155 @@
+/* adding a color */
+#div1 {
+  height: 200px;
+  width: 200px;
+
+  /* background-color: red; */
+  /* background-color: #393a7b; */
+  /* background-color: rgba(25, 126, 200, 1); */
+  /* 1 is full color and 0 is transparent , it will called opacity range 0-1; */
+  /* background-color: hsl(hue, saturation, lightness); */
+  /* hue specified which degree in color wheel are you pointing to 
+  0 is for red,120 is for green,240 is for blue
+  staturation 
+  lightness is 0 to 100% */
+  /* different ways are: name,hex,rgb,rgba,hsl,hsla */
+}
+
+/* CSS units */
+/* we can divide into two absolute (ex: cm,in,px etc)and relative. */
+/* 1 px =1/96 inch  */
+/* one css pixel is not equal to device pixel always */
+/* relative means relative to parent */
+/* here div2 which is child of div1 */
+#div2 {
+  height: 50%;
+  width: 50%;
+  background-color: cyan;
+}
+
+/* another relative unit is vh and vw which is viewput height and viewput width  */
+/* viewput is visible area of browser  where we can see the browser content*/
+/* for compelte viewput we write 100vh and 100vw; */
+#div3 {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* another unit is rem which is relative to font size of root element of page which is html element */
+/* 1 rem = font size of root  */
+/* another is em which is relative to parent */
+html {
+  font-size: 30px;
+}
+#div4 {
+  height: 4rem;
+  width: 6rem;
+}
+
+/* add border to an element  */
+#div5 {
+  /* border-width: 2px; (all four border) */
+  /* border-width: 2px 4px; (top and bottom 2 px while left and right 4px) */
+  /* border width: 2px 5px 4px;(top os 2px ,bottom is 4px while left and right will be 5px) */
+  /* border-width: 2px 5px 6px 4px;
+  border-style: solid;
+  border-color: red; */
+  border: 4px solid red;
+  border-radius: 4px;
+}
+
+#sample-text {
+  /* border: 2px solid red; */
+  border-left: 4px solid red;
+}
+
+/* Text stying  */
+#sample-para {
+  font-size: 30px;
+  color: blue;
+  font-weight: bolder; /*or range from 100-900 to thiner to thickest*/
+  /* font-weight: 700; bold */
+  text-align: justify;
+  line-height: 10px;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+
+/* Adding background to an element (or image to background)  */
+#logo-img-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(image/coding_ninjas.png); /*this image  repeat in whole div*/
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat-x;
+  background-position: center;
+  /* background-size: cover; auto(default),cover,contain */
+  background-size: 200px 300px;
+  background-attachment: scroll; /*scroll(default,fixed*/
+}
+
+/* margin */
+/* it is space around the element  */
+/* vertical margin collapse not collab while horizontal margin add up  */
+#outer-div {
+  height: 200px;
+  width: 200px;
+  background-color: #393a7b;
+  /* margin: 4px 10px; */
+  margin: auto; /*placed in center of screen there is only horizontal margin ,vertical is 0*/
+}
+
+/* padding */
+/* it is within the element */
+
+#outer-div1 {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  padding: 20px;
+}
+
+/* Display property  */
+/* 1.inline
+2.block */
+/* imp: if we have div with some height and width and we make it inline then we cant see it beacuse in line element we can't set height and width  it will adjust acc to content or cant give them vertical margin */
+span {
+  display: block;
+}
+
+/* to overcome this problem introduce inline-block  */
+div {
+  display: inline-block;
+  margin-left: -4px;
+}
+
+/* Position property */
+/* 5 position properties are there: 
+ 1.static 2.relative 3.absolute(is position with respect to the first position of parent)  4.fixed 5.sticky */
+
+#div {
+  background-color: orange;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+/* box model  */
+/* every html elment is a rectangular box with content ,border and padding without margin outside */
+
+/* two box model content box model and border box model  */
+/* in content box model ,height= given height + top(padding)+ bottom(padding)+top(border)+bottom(border) */
+/* int border box model height is total height which include all thinks */
+
+#div {
+  box-sizing: border-box;
+}
+
+/* Min Max width  */
+#div {
+  min-width: 120px;
+  max-width: 200px;
+  overflow: scroll;
+}
+
+/*if there is any content which is overflow div to adjust we can set overflow*/
