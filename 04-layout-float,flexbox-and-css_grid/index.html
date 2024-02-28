@@ -1,0 +1,32 @@
+<!-- layout ? -->
+<!-- layout is the way text,images and other content is placed and arranged on a webpage -->
+<!-- layout gives the page a visual structure,into which we place our content  -->
+<!-- two layout are :page layout and component layout  -->
+
+<!-- there are 3 ways of building layout with css  -->
+<!-- 1. float layouts:the old way of building layout of all sizes,using the float css property.still used,but getting outdated fast.
+2.flexbox: modern way of laying out elements in a 1-D row without using floats.perfect for component layouts.
+3.cssgrid: for laying out element in a fully fledged 2 D grid.Perfect for page layout and complex components. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clearfix">
+      <img src="image/logo_switchtocode.png" alt="" class="logo" />
+
+      <!-- first method to clearr float  -->
+      <!-- <div class="clear"></div> -->
+    </div>
+    <aside>
+      <img src="image/coding_ninjas.png" alt="" class="detail" />
+    </aside>
+    <footer>
+      <p class="log-detail">Lorem ipsum dolor, sit amet consectetur</p>
+    </footer>
+  </body>
+</html>

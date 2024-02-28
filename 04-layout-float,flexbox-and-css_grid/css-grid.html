@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container--1 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+
+        /* CSS GRID */
+        /* display: grid; */
+        display: none;
+        /* grid-template-columns: 250px 200px 100px 150px; */
+        /* grid-template-rows: 300px 200px; */
+        /* grid-template-columns: 250px 200px 1fr 150px; */
+        /* grid-template-columns: 250px 200px 1fr 1fr; both fr try to fill empty space */
+        /* grid-template-columns: 2fr 1fr 1fr auto; */
+        /* grid-template-columns: 2fr 1fr 1fr 1fr;  here first column take 2 fraction part of container  */
+        /* better way  */
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: 1fr 1fr; */
+        /* grid-template-rows: 1fr auto; here auto fill the second row that space required and other will occupied by 1st row due to fr */
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
+        /* gap: 30px; */
+        row-gap: 30px;
+        column-gap: 20px;
+      }
+
+      .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .el--2 {
+        /* grid-column: 1/2; if second value is one more than first then we can ommit it */
+        /* grid-column: 1/3; it expand grid item to two cells  */
+        /* grid-column: 1 / span 2; it means start at 1 and span across to 2 cell which is similar to 1/3   */
+        /* if we dont know how many columns are their so than we want to span whole grid row by 
+        grid-column: 1/-1; */
+        grid-column: 1;
+        grid-row: 2/3;
+      }
+      /* .el--6 {
+        grid-row: 3/5;
+      } */
+      .container--2 {
+        /* display: none; to remove content */
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: black;
+        font-size: 40px;
+        margin: 100px;
+
+        width: 1000px;
+        height: 600px;
+
+        /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+        /* aligining tracks inside container: distribute empty space  */
+        justify-content: center;
+        /* justify-content: space-between;  */
+        /* align-content: end; */
+        align-content: center;
+
+        /* Aliging items inside cells:moving items around inside cells  */
+        align-items: center;
+        justify-items: center;
+
+        /* override indivually  */
+        .el--3 {
+          align-self: end;
+          justify-self: end;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container--1">
+      <div class="el el--1">(1) HTML</div>
+      <div class="el el--2">(2) and</div>
+      <div class="el el--3">(3) CSS</div>
+      <div class="el el--4">(4) are</div>
+      <div class="el el--5">(5) amazing</div>
+      <div class="el el--6">(6) languages</div>
+      <div class="el el--7">(7) to</div>
+      <div class="el el--8">(8) learn</div>
+    </div>
+
+    <div class="container--2">
+      <div class="el el--1">(1)</div>
+      <div class="el el--3">(3)</div>
+      <div class="el el--4">(4)</div>
+      <div class="el el--5">(5)</div>
+      <div class="el el--6">(6)</div>
+      <div class="el el--7">(7)</div>
+    </div>
+  </body>
+</html>
+
+<!-- in css grid we have girdcontainer and grid item  -->
+<!-- we have to set display grid and then grid template columns we can 
+define as many width value as we want and for each width a column is created -->
+<!-- we can define different value of gap for row and column  -->
+
+<!-- 1.css gird is a set of css properties for building 2d layouts.
+2.the main idea behind css grid is that we divide a container element into rows and columns that
+can be filled with its child elements 
+3.in two d contexts,css grid allows us to write less nested html and easier to read css 
+4. css grid is not meant to replace flexbox instead ,they work perfectly together .Need a 1d layout ,use flexbox.need 2d layout,use css grid. -->
+
+<!-- css grid terminology -->
+<!-- 1.grid container 2.grid item 3.row axis 4.column axis 5.gridlines: divide the
+grid or separate row and column.(row+1 and column+1) 5.grid cell are the cells
+created by interaction of grid lines(might be filled by a grid item or not)
+6.we can create space between grid items is called gutters(gaps) 
+7.grid track/row 8.grid track/column-->
+
+<!-- sizing grid columns and rows  -->
+
+<!-- for creating flexible row and column we use fr unit  it will fill all the empty space-->
+<!-- the row which we define are explicit row and other we not define are implicit row  -->
+<!-- we can define fr for rows also but if there is no height to grid container then it will take the height of which  grid item that have highest word fill inside it  -->
+
+<!-- placing and spanning grid items manually  -->
+<!-- for place and grid item then used grid column: start of column/end of column. -->
+
+<!-- aligning of grid items and tracks  -->

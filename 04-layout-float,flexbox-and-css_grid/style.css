@@ -1,0 +1,37 @@
+/* body {
+  background-color: red;
+} */
+div {
+  background-color: blue;
+}
+/* .log-detail {
+  float: right;
+} */
+.logo {
+  float: left;
+  background-color: red;
+}
+/* how to overcome the vertical height difference due to float  */
+/* clear float  */
+
+.clear {
+  clear: both;
+}
+/* 2nd method  */
+/* pesudo element after, create the new element which is last child of container  and it is inline element so we have to make it block */
+.clearflex::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.detail {
+  width: 500px;
+  float: right;
+}
+.log-detail {
+  clear: both; /*here the footer is float around the detail element becuase it come after it show we can use clear to get their original positon. */
+}
+
+/* box-sizing:border-box;
+we use flex to make box but while setting the size due to padding or margin it can increase the size so we make boxsizing to border box 
+which means now the width include margin and padding so we do it in universal selector */

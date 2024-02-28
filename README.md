@@ -30,3 +30,73 @@ color:blue;
 5.there are three places where we can write css is inline,internal and external css
 6.inline css write inside the html element
 7.in internal css we declare a style element in head.
+
+IMP:
+WEB DESIGN
+1.Divide in 9 different areas of design : ingredients
+a.Typography : formatting and designing of text.
+b.Colors.
+c.Images/Illustrations
+d.Icons
+e.Shadows
+f.Border-radius
+g.Whitespace
+i.Visual Hierarchy
+j.User Experience
+k.Components/Layout
+2.Desgin decisions for each ingredient are based on website personality.
+
+A.Typography
+ex :serif and sans-serif
+1.tool box: google fonts ,font squirrels 2. use a font size between 16px and 32 px for normal text. 3. for any text,dont use a font weight under 400(regular)
+4.use less than 75 characters per line
+5.for normal sized text,use a line height between 1.5
+and 2 .for big text,go below 1.5
+tip: the smaller or longer the text,the larger the line height. 6.Usually don't justify text.
+imp.tool for font size: type-scale.com
+
+B.Color
+tools: open color,tailwindcss,flat ui colors2,tint and shade generator, coolors, palleton.com
+
+1.we need at least two type of colors in your color palette:a main color and a grey color. 2. with more experience ,you can add more colors: accent colors(use tool) 3. for diversity,create lighter and darker "versions"(tints and shades)
+
+2.on dark colored backgrounds,try to use a tint of the background(lighter version") for text. 3.
+3.text should usually not be completely black.Lighten if up it look heavy and uninviting.
+4.Don't make text too light use tool(coolors) to check contrast between text and background colors.
+tip: contrast ratio needs to be at least 4.5:1 for noramal text and 3:1 for large text(+18px)
+
+C.Images:
+tools: unsplash,pexels,drawkit,undraw
+1.to account for high-res screens,make image dimensions 2x as big as their displayed size.
+2.compress images for a lower file size and better performance.
+toolbox: squoosh
+
+D.icons:
+tools: phosphor icons,ionicons,icons8,heroicons
+1.use svg icons or icon font(they are vector based and scale indefinitely).dont use bitmap image formats(.jpg and .png)
+
+E.Shadows:
+1.shadows creates depth(3D) , the more shadow ,the further away from the interface the element is
+2.shadow can be used on boxes and text.
+3.use shadow in small does,dont add shadow to every element
+4.go light on shadow, don't make them too dark.
+syntax: box-shadow: horizontaloffsetoftheshadow verticaloffsetoftheshadow bluroftheshadow scaletheshadowup(optional) coloroftheshadow
+
+F.Border radius:
+1.use border-radius on buttons,images,around icons,standout sections and other elements.
+
+G.WHite space
+1.right amount of whitespace make design look clean,modern,and polished.
+
+H.Visual hierarchy:
+1.is about establishing which element of a design are the most important ones.
+2.we use a combination of position,size,colors,spacing,borders,and shadow to establish a meaningful visual hierarchy between elements/componenets.
+
+I.USER EXperience(UX)
+
+1.User Interface(UI) is the visual presentation of a product.It how the graphical interface looks and feel like.
+2.User Experience(UX) is the overall experience the user has while interacting with the product.
+
+IMP: steal like artist:
+websites: land-book,onepagelove,awwwards.com
+,screenlane.com,appsingal,docspo.com
