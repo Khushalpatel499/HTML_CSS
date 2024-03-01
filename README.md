@@ -100,3 +100,11 @@ I.USER EXperience(UX)
 IMP: steal like artist:
 websites: land-book,onepagelove,awwwards.com
 ,screenlane.com,appsingal,docspo.com
+
+Element and components:
+
+1.from elements to webpage:
+element->component->layout->webpage
+
+a.elements:
+ex: text,buttons,images,input elements,tags
