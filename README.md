@@ -28,9 +28,7 @@ color:blue;
 4.in above code h1 is selector and color is property and blue is value and property with value together is declaration/style ,all this declartion or style make together a declaration block which put in{}. all together are called css rule
 
 5.there are three places where we can write css is inline,internal and external css
-6.inline css write inside the html element
-7.in internal css we declare a style element in head.
-
+6.inline css write inside the html element 7. in internal css we declare a style element in head. 8. inline css get more prefrence then internal css 9. inline is always preffered , in internal vs external it depend on the link tag if link tag is before the internal style then the last which is internal is preferred and vice versa.
 IMP:
 WEB DESIGN
 1.Divide in 9 different areas of design : ingredients
