@@ -39,12 +39,16 @@ p {
   font-family: sans-serif;
 }
 
-/* li h4{
+/* li h4{ all h4 in list iteam (nesting)
     text-transform: uppercase;
     font-family: cursive;
 } */
 
-/* pseudeo class */
+/* #site-desc p {
+  color: yellow; it doesn't effect on p with a tag becuase a tag is more specific then p tag
+} */
+
+/* pseudeo class: it is basically a represent state */
 #blog-title:hover {
   color: red;
 }

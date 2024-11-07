@@ -28,7 +28,15 @@ color:blue;
 4.in above code h1 is selector and color is property and blue is value and property with value together is declaration/style ,all this declartion or style make together a declaration block which put in{}. all together are called css rule
 
 5.there are three places where we can write css is inline,internal and external css
-6.inline css write inside the html element 7. in internal css we declare a style element in head. 8. inline css get more prefrence then internal css 9. inline is always preffered , in internal vs external it depend on the link tag if link tag is before the internal style then the last which is internal is preferred and vice versa.
+6.inline css write inside the html element
+7.in internal css we declare a style element in head 8.inline css get more prefrence then internal css
+9.inline is always preffered , in internal vs external it depend on the link tag if link tag is before the internal style then the last which is internal is preferred and vice versa.(basically the last rule win always)
+10.one element can have more than one classes
+11.identify one element we used id for that elment
+12.css selector are the help to select element or multiple element present in the html page
+13.define color by color name, hexcode(#6digit) 2 for red, 2 for green and 2 for blue(2 digit value is 0-255) , hexadecimal are base 16, other option is rgb() value
+14.Another for rgb is rgba() where a is alpha is opacity(0 to 1) means the quality of see through means 0 maeans transparent, 1 means full visible
+15.Another is hsl() means hue,staturation and lightness it basically about color wheel where h show which degree point in the color wheel, means 0 is for red ,120 is for green , similary with hsla()
 IMP:
 WEB DESIGN
 1.Divide in 9 different areas of design : ingredients
