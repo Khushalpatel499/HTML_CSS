@@ -1,0 +1,39 @@
+/* units: 
+1. absoulte  2. relative 
+
+1. absolute: cm ,in, px
+
+1 px =1/96 inch
+it is not always true that 1px css is equal to 1px of device.
+
+
+2. relative: percentage , vh(view put height) and vw 
+view put : it is a visible area of browser
+
+100vh means complete height similar for width
+
+rem- it is relative to the font size of root element which is html
+1 rem = font size of root
+we can chage rem by doing 
+html{
+font size:30px;
+}*/
+
+#div1 {
+  height: 200px;
+  width: 300px;
+  background-color: red;
+}
+
+/* #div2 {
+  height: 100px;
+  width: 150px;
+  background-color: black;
+}
+above the div2 is not relative to parent div1 */
+
+#div2 {
+  height: 50%;
+  width: 50%;
+  background-color: black;
+}

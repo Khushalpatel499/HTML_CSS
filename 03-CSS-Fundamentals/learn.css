@@ -51,11 +51,11 @@ html {
   /* border-width: 2px; (all four border) */
   /* border-width: 2px 4px; (top and bottom 2 px while left and right 4px) */
   /* border width: 2px 5px 4px;(top os 2px ,bottom is 4px while left and right will be 5px) */
-  /* border-width: 2px 5px 6px 4px;
+  /* border-width: 2px 5px 6px 4px;(clockwise top,right,bottom,left)  
   border-style: solid;
   border-color: red; */
   border: 4px solid red;
-  border-radius: 4px;
+  /* border-radius: 4px; to round the borders */
 }
 
 #sample-text {
@@ -90,7 +90,7 @@ html {
 
 /* margin */
 /* it is space around the element  */
-/* vertical margin collapse not collab while horizontal margin add up  */
+/* vertical margin collapse not collab(add) while horizontal margin add up  */
 #outer-div {
   height: 200px;
   width: 200px;
@@ -117,16 +117,19 @@ span {
   display: block;
 }
 
-/* to overcome this problem introduce inline-block  */
+/* to overcome this problem introduce inline-block  but there are always some space between two div is 4px */
 div {
   display: inline-block;
   margin-left: -4px;
 }
+/* 
+we can write selector rule as 
+ button[type ="submit"]{} */
 
 /* Position property */
 /* 5 position properties are there: 
- 1.static 2.relative 3.absolute(is position with respect to the first position of parent)  4.fixed 5.sticky */
-
+ 1.static 2.relative(elment position is rleative to normal position) 3.absolute(is position with respect to the first position of parent for that we have to set position of parent to relative if not specified then it with body relative)  4.fixed (element stick to the view put)5.sticky(it is combination of relative and fixed means it is relative to certain point but after that it is fixed once the threshold reach out it fixed like the top is 20 px when we scroll 2opx it will relative but after it is stick with scroll unitll the parent container) */
+/* imp there is no space reserved for absolute element image it is floating  */
 #div {
   background-color: orange;
   position: relative;
@@ -139,7 +142,7 @@ div {
 
 /* two box model content box model and border box model  */
 /* in content box model ,height= given height + top(padding)+ bottom(padding)+top(border)+bottom(border) */
-/* int border box model height is total height which include all thinks */
+/* int border box model height is total height which include all thinks(content+padding+border) */
 
 #div {
   box-sizing: border-box;
@@ -149,7 +152,8 @@ div {
 #div {
   min-width: 120px;
   max-width: 200px;
-  overflow: scroll;
+  min-height: 2000px;
+  /* overflow: scroll; visible(default),hidden,auto(browser adjust) */
 }
-
+/* when the content is bigger than the div or box then the secenrio is overflow */
 /*if there is any content which is overflow div to adjust we can set overflow*/

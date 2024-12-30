@@ -36,7 +36,8 @@ color:blue;
 12.css selector are the help to select element or multiple element present in the html page
 13.define color by color name, hexcode(#6digit) 2 for red, 2 for green and 2 for blue(2 digit value is 0-255) , hexadecimal are base 16, other option is rgb() value
 14.Another for rgb is rgba() where a is alpha is opacity(0 to 1) means the quality of see through means 0 maeans transparent, 1 means full visible
-15.Another is hsl() means hue,staturation and lightness it basically about color wheel where h show which degree point in the color wheel, means 0 is for red ,120 is for green , similary with hsla()
+15.Another is hsl() means hue,staturation and lightness it basically about color wheel where h show which degree point in the color wheel, means 0 is for red ,120 is for green , similary with hsla().
+
 IMP:
 WEB DESIGN
 1.Divide in 9 different areas of design : ingredients
