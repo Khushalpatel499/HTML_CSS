@@ -1,0 +1,115 @@
+/* body has alreday some margin so make it 0; */
+
+body {
+  margin: 0px;
+}
+
+/* BODY HEADER  */
+#body-header {
+  /* the image not show becuase the height is 0 or since the parent container doesn't have height also so it collapse and it height is 0 the solution is that you can give parent container height  */
+  background-image: url(image/macbook_mouse.jpg);
+  height: 65vh;
+  /* we know that it is block element so it take whole width but the image is big so we have to set it  */
+  background-size: cover;
+  background-position: center;
+  /* we want some burlly effect also  */
+  opacity: 0.8;
+  /* also want to fixed the image when we scroll to look good  */
+  background-attachment: fixed;
+}
+
+/* HORIZONTAL LIST  */
+
+/* first i have to remove the dot of list so we create a horizontal class  */
+
+.horizontal-lists {
+  list-style: none;
+  /* we can see still there are some padding there  */
+  padding-left: 0px;
+  /* also want to make text center  but wirte it again where where we make a different class */
+  /* text-align: center; */
+  /* still there is some space above the background image that is becuase of margin of list  */
+  margin: 0px;
+}
+/* now want to make list horizontal  */
+.horizontal-lists li {
+  display: inline-block;
+  /* now want some margin also  */
+  margin: 0px 8px 0px 8px;
+}
+/* now i want to remove the anchor tag color and line  */
+.horizontal-lists li a {
+  text-decoration: none;
+  color: white;
+  /* we also want the smooth trastion to look good  */
+  /* transition: color 0.5s, border-bottom 0.5s; */
+}
+.nav-menu li a {
+  transition: color 0.5s, border-bottom 0.5s;
+}
+
+/* now i want to come back the decoration when i hover  */
+/* .horizontal-lists li a:hover {
+  color: lightgray;
+  border-bottom: 1px solid white;
+} */
+
+.nav-menu li a:hover {
+  color: lightgray;
+  border-bottom: 1px solid white;
+}
+
+/* NAME AND SOCIAL ICONS   */
+#name-social-container {
+  margin-top: 30vh;
+}
+#my-name {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.1rem;
+  font-weight: 700;
+}
+/* set padding for icon  */
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+  /* now i want to circle around the icon  */
+}
+/* now i want some shadow for this and also want to remove the underline when hover on the icon but it come form the horizontal-lists so we have to give specific class to that property which affect it  */
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 4px rgba(230, 196, 196, 0.2);
+}
+
+/* ABOUT SECTION  */
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+/* height of image is too big so we have to first set the parent height and width and then imag  */
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  /* now bring img at center by margin auto  */
+  margin: auto;
+  margin-top: -17vh;
+
+  /* but the problem is that the img come under the background image to do that we use the position relative */
+}
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(230, 196, 196, 0.2);
+  border: 2px solid white;
+}
+#my-image p {
+  text-align: center;
+  margin: 50px 50px;
+}
+
+.text-center {
+  text-align: center;
+}

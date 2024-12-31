@@ -37,3 +37,8 @@ above the div2 is not relative to parent div1 */
   width: 50%;
   background-color: black;
 }
+
+/* box-shadow is a property for shadow it take few values 
+h-offset indicate that positive value more shadow toward right, negative means shadow at left, zero means no ::shadow
+v-offset indicate that positive for bottom  negative for top  
+if you want blur , spread, color are few option*/

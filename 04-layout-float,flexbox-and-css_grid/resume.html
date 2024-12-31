@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- resume structure: 
+    1. Header 
+           a.navbar
+           b. name and links
+    
+    2. Main 
+       a. About 
+       b.skills
+       c. work experience 
+       d. Education 
+       e. portfolio 
+       f. contact -->
+
+    <header id="body-header">
+      <!-- if i directly create list here without and container then it gonna be difficut to adjacent directly or styling it is not visible becuase of color of background  -->
+      <nav>
+        <ul class="horizontal-lists text-center nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Experinece">Experience</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact ">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- now we have to addd heading  -->
+      <div id="name-social-container">
+        <div class="text-center">
+          <h1 id="my-name">Khushal Patel</h1>
+        </div>
+        <!-- another for social icon list dowload form fontawsome    -->
+        <div>
+          <ul class="horizontal-lists text-center social-icons">
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <!-- in this section we have two think one is image and other is para 
+          -->
+        <div id="my-image">
+          <img src="image/khushal.jpeg" alt="" />
+        </div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+          voluptates porro qui eaque explicabo exercitationem amet iusto sequi
+          commodi eius, atque, ipsam molestiae illum fuga ad nam voluptate
+          provident modi! Nulla alias sint numquam sequi accusamus asperiores
+          odit veniam ullam eaque reiciendis voluptas consequatur, quibusdam
+          aperiam obcaecati quaerat perspiciatis dolorem delectus dignissimos.
+          Illo suscipit repellat doloremque, iure natus quisquam vero at
+          dolorem. Excepturi praesentium rerum, error officia maxime odio
+          quibusdam voluptates, recusandae deserunt, reiciendis explicabo odit
+          eius sequi et omnis quos voluptatum incidunt labore veritatis.
+          Impedit, quod deleniti autem quis cupiditate tempora itaque ad
+          molestias delectus praesentium quidem, neque a quaerat accusantium,
+          incidunt necessitatibus reiciendis dignissimos architecto repellat
+          maiores doloribus ea voluptas. Qui dolores, totam officia iure quo
+          odit molestias temporibus id nulla tenetur est optio neque debitis,
+          quam, porro aperiam. Aliquid maiores quia doloribus distinctio sit
+          minima recusandae, nam, commodi quis maxime ipsam architecto
+          voluptatibus molestias labore autem. Veniam eaque consequatur
+          quibusdam assumenda dolor laudantium repellat accusamus exercitationem
+          facilis voluptatibus recusandae sequi nemo quod sint, molestias
+          fugiat. Neque natus tempora laborum animi nostrum, dicta ducimus
+        </p>
+      </section>
+      <section id="skills"></section>
+      <section id="experience"></section>
+      <section id="education"></section>
+      <section id="portfolio"></section>
+      <section id="contact"></section>
+    </main>
+  </body>
+</html>
