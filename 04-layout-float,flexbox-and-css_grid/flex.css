@@ -8,6 +8,7 @@
   /* row, row-reverse,column-reverse  */
   flex-wrap: wrap-reverse;
   justify-content: center;
+  align-items: flex-end;
 }
 /* now set same height and width for all 4 div  */
 

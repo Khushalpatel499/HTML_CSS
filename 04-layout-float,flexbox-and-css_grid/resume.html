@@ -69,31 +69,71 @@
         <div id="my-image">
           <img src="image/khushal.jpeg" alt="" />
         </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-          voluptates porro qui eaque explicabo exercitationem amet iusto sequi
-          commodi eius, atque, ipsam molestiae illum fuga ad nam voluptate
-          provident modi! Nulla alias sint numquam sequi accusamus asperiores
-          odit veniam ullam eaque reiciendis voluptas consequatur, quibusdam
-          aperiam obcaecati quaerat perspiciatis dolorem delectus dignissimos.
-          Illo suscipit repellat doloremque, iure natus quisquam vero at
-          dolorem. Excepturi praesentium rerum, error officia maxime odio
-          quibusdam voluptates, recusandae deserunt, reiciendis explicabo odit
-          eius sequi et omnis quos voluptatum incidunt labore veritatis.
-          Impedit, quod deleniti autem quis cupiditate tempora itaque ad
-          molestias delectus praesentium quidem, neque a quaerat accusantium,
-          incidunt necessitatibus reiciendis dignissimos architecto repellat
-          maiores doloribus ea voluptas. Qui dolores, totam officia iure quo
-          odit molestias temporibus id nulla tenetur est optio neque debitis,
-          quam, porro aperiam. Aliquid maiores quia doloribus distinctio sit
-          minima recusandae, nam, commodi quis maxime ipsam architecto
-          voluptatibus molestias labore autem. Veniam eaque consequatur
-          quibusdam assumenda dolor laudantium repellat accusamus exercitationem
-          facilis voluptatibus recusandae sequi nemo quod sint, molestias
-          fugiat. Neque natus tempora laborum animi nostrum, dicta ducimus
-        </p>
+        <div id="about-para">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+            voluptates porro qui eaque explicabo exercitationem amet iusto sequi
+            commodi eius, atque, ipsam molestiae illum fuga ad nam voluptate
+            provident modi! Nulla alias sint numquam sequi accusamus asperiores
+            odit veniam ullam eaque reiciendis voluptas consequatur, quibusdam
+            aperiam obcaecati quaerat perspiciatis dolorem delectus dignissimos.
+            Illo suscipit repellat doloremque, iure natus quisquam vero at
+            deleniti autem quis
+            <span class="text-highlight">cupiditate tempora</span> cupiditate
+            tempora itaque ad molestias delectus praesentium quidem, neque a
+            quaerat accusantium, incidunt necessitatibus reiciendis dignissimos
+            architecto repellat maiores doloribus ea
+            <span class="text-highlight">voluptas.</span> Qui dolores, totam
+            officia iure quo odit molestias temporibus id nulla tenetur est
+            optio neque debitis, quam, porro aperiam. Aliquid maiores quia
+            doloribus distinctio sit minima recusandae, nam, commodi quis maxime
+            ipsam architecto voluptatibus molestias labore autem.
+            <span class="text-highlight">Veniam eaque consequatur</span>
+            quibusdam assumenda dolor laudantium repellat accusamus
+            exercitationem facilis voluptatibus recusandae sequi nemo quod sint,
+            molestias fugiat. Neque natus tempora laborum animi nostrum, dicta
+            ducimus
+          </p>
+        </div>
+        <!-- all the other section use mainly flex to better alingment so we make all the section flex with 100% width so other section not effect.
+           -->
+        <!-- we also see there is alternative all section color is white so one way is to set using the id for each color or other way is  -->
       </section>
-      <section id="skills"></section>
+      <section id="skills">
+        <!-- now create skill heading with icon  -->
+        <h1 class="section-heading mb75px">
+          <span><i class="fa-solid fa-chalkboard-user"></i></span>
+          <span>SKILLS</span>
+        </h1>
+        <!-- now next is display the skills  -->
+        <div class="skills-display">
+          <div class="skill-progress">
+            <div class="eight-five-percent mb-blue">
+              <div class="skill-name"><span>C++</span></div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eight-five-percent mb-red">
+              <div class="skill-name"><span>HTML</span></div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eight-five-percent mb-purple">
+              <div class="skill-name"><span>JAVA</span></div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eight-five-percent mb-violet">
+              <div class="skill-name"><span>CSS</span></div>
+            </div>
+          </div>
+          <div class="skill-progress">
+            <div class="eight-five-percent mb-green">
+              <div class="skill-name"><span>NODE</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="experience"></section>
       <section id="education"></section>
       <section id="portfolio"></section>

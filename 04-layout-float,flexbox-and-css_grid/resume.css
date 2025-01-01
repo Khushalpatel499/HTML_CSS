@@ -81,6 +81,36 @@ body {
 .social-icons li a i:hover {
   box-shadow: 0px 0px 4px rgba(230, 196, 196, 0.2);
 }
+/* make all section flex  */
+section {
+  width: 100%;
+  /* we can't see any section so we set the height: */
+  /* height: 75vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* alternate color the section  */
+
+section:nth-child(2n) {
+  background-color: lightgray;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+.section-heading {
+  width: auto;
+  /* margin: 10px auto; */
+  font-weight: 400;
+  padding: 20px 10px 10px;
+}
+.section-heading span {
+  font-size: 40px;
+  color: #2857a4;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+}
 
 /* ABOUT SECTION  */
 #about {
@@ -102,14 +132,91 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(230, 196, 196, 0.2);
+  box-shadow: 1px 1px 10px 2px rgba(230, 196, 196, 0.2);
   border: 2px solid white;
 }
-#my-image p {
-  text-align: center;
-  margin: 50px 50px;
+#about-para {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: gray;
+  line-height: 28px;
+  font-weight: 100;
+  font-size: 1.1rem;
 }
 
+/* SKILLS SECTION  */
+.skills-display {
+  /* width: 70%; */
+  width: 40%;
+  height: 100px;
+  /* border: 2px solid black;  */
+  /* now make this to center so we know that it is flex box so by align item  */
+  /* now all the skills are flex so  */
+  display: flex;
+  /* not in one line so  */
+  flex-wrap: wrap;
+
+  /* i want space between equal  */
+  justify-content: space-between;
+}
+
+/* set div inside div for skill percentage view using color  */
+.skill-progress {
+  background-color: lightgrey;
+  height: 1.4rem;
+  width: 4rem;
+  border-radius: 0.8rem;
+  border: 2px solid black;
+}
+
+/* on the direct child div  */
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span {
+  color: white;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+/* common margin classes  */
+.mb75px {
+  margin-bottom: 75px;
+}
+/* common text center  */
 .text-center {
   text-align: center;
+}
+
+/* COMMON COLOR CLASSES */
+.text-highlight {
+  color: #2857a4;
+  font-weight: 600;
+}
+.mb-blue {
+  background-color: #2857a4;
+}
+.mb-red {
+  background-color: red;
+}
+.mb-purple {
+  background-color: purple;
+}
+.mb-violet {
+  background-color: violet;
+}
+.mb-green {
+  background-color: green;
+}
+
+/* PERCENTAGE CLASSES  */
+.eight-five-percent {
+  width: 85%;
+  height: inherit;
+  /* border-radius: 0.8rem; */
 }

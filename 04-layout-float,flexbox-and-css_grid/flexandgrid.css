@@ -18,6 +18,9 @@
 17. justified content decide the alignment across the main axis 
 18. main axis is basically the flex-direction by defualt is row.
 19.justify-content take 5values 1.flex-start 2.flex-end 3.center 4.space-around 5.space-between
+20. now align item it is used to align item across the cross axis.
+21. cross axis is perpendicular to main axis.
+22. it take five values: 1.flex-start 2.flex-end 3.center 4.baseline: it is align to all the children to the base line let supppose childeren have margin 10,20,30 and by apply this all aling to 30px 5.stretch: it is default value means it strench across the cross axis if we not provide height of child then it will strech to the whole container.
 
 
 
