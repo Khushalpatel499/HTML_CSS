@@ -1,0 +1,37 @@
+/* 1.flex and grid are used to create flexible and responsive websites
+2. flex full name flexible box layout.
+3. means adjacet elemment with respect to container or childeren with respect to parent.
+4. they are many way to arrange by position also but flex help to do with smooth and less code.
+5. default orientaiton in flex container is horizontal.
+6. but we can change by flex direction .
+7. we can change the order of child container also using order in child container.
+8. if we set some width to childrens and add more children then it get shrink and not get their effective width.
+9. to solve this problem we used flex-wrap property.
+10. by default it is nowrap means all the children are wrap in single line so to present them in multiple line we should select wrap or wrap-reverse    but then it can overflow the container.
+11.wrap from left to right and wrapreverse right to left.
+12. if there few children and still there are few space remaining then the children can cover that space by flex-grow.
+13. let there are two children and both are of 100px and 100px width and the continer widht is 300 px and now 100px is free so set the flex-grow to both the children with 1 means they dived both free space take 50 each.
+14.flex gorw depend on the flex direction.
+15. we have flex-shrink also if there is not that much space is available.
+16.justified content is used alignment items in flex box like begning ,end,or distributed the space equally between them .
+
+17. justified content decide the alignment across the main axis 
+18. main axis is basically the flex-direction by defualt is row.
+19.justify-content take 5values 1.flex-start 2.flex-end 3.center 4.space-around 5.space-between
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

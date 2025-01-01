@@ -42,3 +42,8 @@ above the div2 is not relative to parent div1 */
 h-offset indicate that positive value more shadow toward right, negative means shadow at left, zero means no ::shadow
 v-offset indicate that positive for bottom  negative for top  
 if you want blur , spread, color are few option*/
+/* to apply style to every html element *{} */
+/* difference between h2.h-style vs .h-style h2 
+the first one the selector target the h2 which have class .h-style
+the second one the selector target h2 decendent that have class .style  
+read css combination*/
