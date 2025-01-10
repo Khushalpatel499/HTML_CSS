@@ -1,0 +1,13 @@
+.one {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  margin: 30px;
+}
+
+.two {
+  height: 200px;
+  width: 200px;
+  background-color: purple;
+  margin: 30px;
+}
