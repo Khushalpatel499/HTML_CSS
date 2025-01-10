@@ -1,0 +1,35 @@
+<!-- 
+ //Responsive Design:
+ 1.user have good ui experience in respect of device.
+ 2. there are three way to achieve this responsivness:
+    a. Responsive web design :using css rule
+    b. Dynamic serving: server will send file according to device type now the problem is that we have to maintain multiple files
+    c. Separate mobile website: seperate website for mobile only it start from m.facebook new url.
+ 3. in first two the file url is same but the  server decide , in first only css change html,js is same while in second html,css,js are different but server decide which file send to device.
+ 
+ step 1: Measurement units for responsive designs:
+  1. abosolute :px,in,cm        2. Relative:%,(vh,vw(used in dimension)),(rem,em(fontsize,text))
+  3. still the fluid layout is difficult becuase what make an image good at this screen is not compuslory at other screen .it can pixelate the image.
+  4. while using percentage we used min-width and max-width so they don't pixalate alot means shrink or sharnk alot.
+  5. other is rem (with respect to root font size) ,em(with respect to the element font size) for text.
+  6. like for top level of website use px and for it component use rem and for their text,para use em.
+  7. read about elastic layout also.
+  
+  // viewport meta tag
+
+1. how browser change the view port according to the device so the first step it will look at the virtual viewput and zoom out till it achieve the device measurement.
+2. it not always success so we don't need to depend on browser
+3. use viewport meta tag and content quaries.
+
+//Media Queries:
+1. introduce css3, it give more flexibility,freedom and control to decide which css rule should apply based on the device type and device properties
+2. it will decide on two type:
+        a. Media type:screen,print,speech,all
+        b. Media-properties: width,height,resolution
+3. syntax: @media screen and (max-width:600px){}
+
+//Desktop first and mobile first(two approach when design website)
+1. Desktop : first desktop then ipad and then move mobile version.
+2. mobile: first mobile then other.
+
+-->

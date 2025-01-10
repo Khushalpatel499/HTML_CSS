@@ -22,19 +22,37 @@
 21. cross axis is perpendicular to main axis.
 22. it take five values: 1.flex-start 2.flex-end 3.center 4.baseline: it is align to all the children to the base line let supppose childeren have margin 10,20,30 and by apply this all aling to 30px 5.stretch: it is default value means it strench across the cross axis if we not provide height of child then it will strech to the whole container.
 
+// Word overflow-Wrap
+1. overflow-wrap : break-word.
+2. It take two value 1.normal 2.break-word.
 
 
 
+//Gradient.
+1. the combination of colors and transitionn happen from color to colours is called gradient effect.
+2. using pradient we can create cool background.
+3. to apply graddient.  background-image:linear-gradient(red,blue); all these are colors tops
+4. the transition happen from one color to another is happen in mid to change this use blue 20% means blue start from 20%.
+5. there two color so each color take half place by default means 0 to 100 for them and if we write blue 20% then it will start from the upper color 20% area similar if we wirte blue 120% then it take from 120% and after 100% red take 20% more.
+6. other way is to specified in px also background-imgae: linear-gradient(red ,blue 30px;
+7. we can also play with direction currently it is in  down. or in degree also.
+8. we can set as backgroud short hand way to reapeat : background:  reapeating-linear-gradient(red,blue 10px);
+9. there are two type of gradient linear and radial.
 
 
+//Pseudo:
+1. it is a keyword that used to select an element along with selector base on a specific state (ex: hover)
+2. we are discuss here: link,active,visited,target  
+3.target is basically when we click the it go that and apply effect.
+4. using target we can do light box animation
 
 
-
-
-
-
-
-
-
-
+Pseudo elements;
+1. it help to style an element or style specific part of element.
+2. ::first-line ,::first-letter
+3. before and after pesudeo element used to add content before/after the content of the element.
+4. what ever we add in before or after is add in inline 
+5. it add virtual element becuase that is not add in html code.
+6. by this we can add icon , use style for before and after ,style in list
+7.
 */

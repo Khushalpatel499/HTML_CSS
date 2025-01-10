@@ -1,0 +1,29 @@
+html {
+  font-size: 30px;
+}
+
+/* fixed layout  */
+/* #div1 {
+  width: 1100px;
+  padding: 5px;
+  border: 1px solid black;
+} */
+
+/* fluid layouts  */
+#div1 {
+  width: 160%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 900px) {
+  #div1 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #div1 {
+    width: 100%;
+  }
+}
